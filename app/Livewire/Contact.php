@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use Illuminate\Support\Arr;
 use Livewire\Component;
 
 class Contact extends Component
@@ -19,6 +20,9 @@ class Contact extends Component
             'email' => 'required|email:rfc,dns',
         ]);
 
+        $this->contacts = Arr::sort($this->contacts, function ($value) {
+            return $value['name'];
+        });
         $this->name = '';
         $this->email = '';
     }

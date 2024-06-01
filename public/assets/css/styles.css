@@ -110,6 +110,8 @@ footer {
 
 .contact-container {
     max-width: 600px;
+    max-height: 400px;
+    overflow-y: auto;
     margin: auto;
     padding: 20px;
     border: 1px solid #fafafa;
