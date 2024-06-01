@@ -200,3 +200,13 @@ button:hover {
     transform: translateY(-2px);
     border-color: #e2e8f0;
 }
+
+.notification {
+    font-size: 14px;
+    background-color: #60c2a6;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}

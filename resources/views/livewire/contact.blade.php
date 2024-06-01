@@ -4,6 +4,15 @@
     </h3>
     <p class="description text">This tool allows you to manage contacts using the form below.</p>
 
+    <div x-data="{ show: false, message: '' }" x-init="@this.on('contactAdded', () => {
+        message = 'Contact added successfully!';
+        show = true;
+        setTimeout(() => { show = false }, 3000);
+    })" x-show.transition.out.duration.1000ms="show"
+        style="display: none;">
+        <div class="notification" x-text="message"></div>
+    </div>
+
     <form wire:submit.prevent="save">
         <div class="form-inputs">
             <div class="form-group">

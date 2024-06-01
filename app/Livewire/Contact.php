@@ -25,6 +25,8 @@ class Contact extends Component
         });
         $this->name = '';
         $this->email = '';
+
+        $this->dispatch('contactAdded');
     }
 
     public function render()
