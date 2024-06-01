@@ -1,8 +1,8 @@
 <p align="right">
-    <img src="public/assets/images/logo.svg" width="50px" />
+    <img src="assets/images/logo.svg" width="50px" />
 </p>
 
-# ComputeSphere Golang Inspire Quotes Example App
+# ComputeSphere Laravel Contact Manager Example App
 
 This example deploys a GO application to ComputeSphere.
 
@@ -13,7 +13,7 @@ This example deploys a GO application to ComputeSphere.
 
 -   A [ComputeSphere](https://computesphere.com) account
 -   [Git](https://git-scm.com/downloads)
--   [PHP](https://go.dev/learn/)
+-   [PHP](https://www.php.net)
 -   [Docker](https://docs.docker.com/engine/install/)
 
 ## Setup
@@ -21,29 +21,29 @@ This example deploys a GO application to ComputeSphere.
 1. Clone this repository.
 
     ```bash
-    git clone https://github.com/computesphere-samples/computesphere-golang-inspirequotes-example.git
+    git clone https://github.com/computesphere-samples/computesphere-laravel-example.git
 
-    cd computesphere-golang-inspirequotes-example
+    cd computesphere-laravel-example
     ```
 
 2. Create the docker image.
 
     ```bash
-    docker build -t computesphere-golang-inspirequotes-example:v.0.0.1 .
+    docker build -t computesphere-laravel-example:v.0.0.1 .
     ```
 
     Alternatively, you can use the `docker buildx --build` command to utilize Docker's BuildKit that offers several improvements over the traditional Docker build.
 
     ```bash
-    docker buildx build --platform=linux/amd64 --tag computesphere-golang-inspirequotes-example:v0.0.1 .
+    docker buildx build --platform=linux/amd64 --tag computesphere-laravel-example:v0.0.1 .
     ```
 
 3. Push the image to Docker Hub.
 
     ```bash
-    docker tag computesphere-golang-inspirequotes-example:v0.0.1 [REPOSITORY]/computesphere-golang-inspirequotes-example:v0.0.1
+    docker tag computesphere-laravel-example:v0.0.1 [REPOSITORY]/computesphere-laravel-example:v0.0.1
 
-    docker push [REPOSITORY]/computesphere-golang-inspirequotes-example:v0.0.1
+    docker push [REPOSITORY]/computesphere-laravel-example:v0.0.1
     ```
 
 > [!NOTE]
@@ -54,12 +54,12 @@ This example deploys a GO application to ComputeSphere.
 Run the server locally.
 
 ```bash
-cd computesphere-golang-inspirequotes-example
+cd computesphere-laravel-example
 
-docker run -p 8080:8080 computesphere-golang-inspirequotes-example:v.0.0.1
+docker run -p 8000:8000 computesphere-laravel-example:v.0.0.1
 ```
 
-This runs the server on `localhost:8080`.
+This runs the server on `localhost:8000`.
 
 ## Deploy to ComputeSphere
 
