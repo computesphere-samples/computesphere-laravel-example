@@ -108,7 +108,78 @@ footer {
     margin-top: 0;
 }
 
-.new-quote {
+.contact-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #fafafa;
+    border-radius: 8px;
+}
+
+.form-inputs {
+    display: flex;
+    gap: 8px;
+}
+
+.form-group {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+}
+
+table.contacts {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-color: 1px solid #000000;
+}
+
+table.contacts th,
+table.contacts td {
+    font-size: 16px;
+    padding: 8px;
+    text-align: left;
+}
+
+table.contacts th {
+    background-color: #f2f2f2;
+}
+table.contacts td {
+    background-color: #fafafa;
+}
+
+th:first-child {
+    border-top-left-radius: 8px;
+}
+
+th:last-child {
+    border-top-right-radius: 8px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+button {
+    width: 100%;
     font-size: 20px;
     line-height: 34px;
     font-weight: 600;
@@ -116,29 +187,14 @@ footer {
     margin-top: 0.5rem;
     background: #000000;
     padding: 8px 24px;
-    border: 2px solid #ffffff; /* Add a white border */
+    border: 2px solid #ffffff;
     border-radius: 12px;
     color: var(--white-color);
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-}
-
-.new-quote:hover {
-    background: #000000;
-    transform: translateY(-2px); /* Slightly lift the button on hover */
-    border-color: #e2e8f0; /* Change border color on hover */
-}
-
-.quote {
-    font-size: 1.5rem;
-    padding: 1rem;
-    border: 1px solid rgb(240, 240, 240);
-    border-left: 4px solid rgba(90, 152, 246, 0.97235);
-    border-radius: 20px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
     transition: all 0.3s ease;
 }
 
-.mt-8 {
-    margin-top: 0.5rem;
+button:hover {
+    background: #000000;
+    transform: translateY(-2px);
+    border-color: #e2e8f0;
 }
