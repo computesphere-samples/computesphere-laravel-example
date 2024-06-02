@@ -4,7 +4,7 @@
 
 # ComputeSphere Laravel Contact Manager Example App
 
-This example deploys a GO application to ComputeSphere.
+This example deploys a Laravel application to ComputeSphere.
 
 > [!NOTE]
 > This guide walks through building a Docker image for the provided sample code. Please note that the version `v0.0.1` used in the example is for demonstration purposes only. You should replace it with a version that suits your specific setup and requirements.
@@ -71,15 +71,14 @@ See our guide on how to deploy this project to ComputeSphere.
 
 <a href="https://console.computesphere.com"> <img src="https://perizer.com/wp-content/uploads/2024/01/Group-1-1.png" alt="ComputeSphere Logo"> </a>
 
-
 ---
+
 [Explore ComputeSphere Documentation](https://docs.computesphere.com)
 
-**Contact Us:**  
-[support@computesphere.com](mailto:support@computesphere.com)  
+**Contact Us:**
+[support@computesphere.com](mailto:support@computesphere.com)
 [Support Portal](https://support.computesphere.com/portal)
 
 &copy; 2024 ComputeSphere LLC. All Rights Reserved.
 
 ---
-
