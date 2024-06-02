@@ -1,5 +1,5 @@
 <p align="right">
-    <img src="assets/images/logo.svg" width="50px" />
+    <img src="public/assets/images/logo.svg" width="50px" />
 </p>
 
 # ComputeSphere Laravel Contact Manager Example App
@@ -71,14 +71,15 @@ See our guide on how to deploy this project to ComputeSphere.
 
 <a href="https://console.computesphere.com"> <img src="https://perizer.com/wp-content/uploads/2024/01/Group-1-1.png" alt="ComputeSphere Logo"> </a>
 
----
 
+---
 [Explore ComputeSphere Documentation](https://docs.computesphere.com)
 
-**Contact Us:**
-[support@computesphere.com](mailto:support@computesphere.com)
+**Contact Us:**  
+[support@computesphere.com](mailto:support@computesphere.com)  
 [Support Portal](https://support.computesphere.com/portal)
 
 &copy; 2024 ComputeSphere LLC. All Rights Reserved.
 
 ---
+
