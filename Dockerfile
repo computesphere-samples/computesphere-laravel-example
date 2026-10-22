@@ -1,4 +1,6 @@
-FROM php:8.2-fpm AS base
+# PHP 8.2.35 fixes CVE-2026-109618 and CVE-2026-109619 (php2shell). Pinned by
+# digest so a stale cached tag cannot bring back an unfixed build.
+FROM php:8.2.35-fpm@sha256:a58479410c94b3f0f7dfacc27fba8befc122290743fd0eb8c88a99ff2a0b1ba1 AS base
 
 WORKDIR /var/www/html
 
@@ -15,7 +17,11 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install pdo pdo_mysql zip \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2@sha256:d0c32820c62cc860fddd22adceed4eeda7698b093a7a88d503414172ce400626 /usr/bin/composer /usr/bin/composer
+
+# Session upload progress is one known route to CVE-2026-109619; this app
+# doesn't use it. Set in php.ini so it applies before a request is parsed.
+COPY docker/php/zz-hardening.ini /usr/local/etc/php/conf.d/zz-hardening.ini
 
 COPY . /var/www/html
 COPY .env.docker /var/www/html/.env
