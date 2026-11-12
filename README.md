@@ -61,6 +61,8 @@ docker run -p 8000:8000 computesphere-laravel-example:v.0.0.1
 
 This runs the server on `localhost:8000`.
 
+The app listens on the port in the `PORT` environment variable when it is set, and on 8000 when it isn't. ComputeSphere sets `PORT` to your service's port, so the app answers where the platform expects it.
+
 ## Deploy to ComputeSphere
 
 <!-- Add a link to the blog once published -->
